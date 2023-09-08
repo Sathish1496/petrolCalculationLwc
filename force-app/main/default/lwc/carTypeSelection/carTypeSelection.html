@@ -1,0 +1,17 @@
+<template>
+  <lightning-card>
+    <lightning-record-edit-form object-api-name="Car__c">
+      <div class="slds-var-m-around_medium">
+        <lightning-input-field
+          field-name="Select_Brand__c"
+          value={selectedBrand}
+          onchange={handleBrandChange}
+        >
+        </lightning-input-field>
+        <lightning-input-field field-name="Select_Car_Model__c">
+        </lightning-input-field>
+      </div>
+    </lightning-record-edit-form>
+    <c-petrol-calculation mileage={mileage}></c-petrol-calculation>
+  </lightning-card>
+</template>

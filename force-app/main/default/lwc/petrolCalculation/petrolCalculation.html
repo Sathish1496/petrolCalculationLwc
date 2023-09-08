@@ -1,0 +1,39 @@
+<template>
+  <lightning-card>
+    <div class="slds-var-m-around_medium">
+      <lightning-input
+        type="number"
+        name="Total Distance"
+        label="Total Distance (KM)"
+        value={distance}
+        required="true"
+      ></lightning-input>
+      <lightning-input
+        type="number"
+        name="Mileage"
+        label="Mileage (KM/L)"
+        value={mileage}
+        required="true"
+      ></lightning-input>
+    </div>
+    <div class="slds-var-m-around_medium">
+      <lightning-record-edit-form object-api-name="Fuel_Location__c">
+        <lightning-input-field
+          field-name="Select_Location__c"
+          value={selectLocation}
+        >
+        </lightning-input-field>
+        <lightning-input-field field-name="Fuel_Cost__c" value={fuelCost}>
+        </lightning-input-field>
+      </lightning-record-edit-form>
+    </div>
+    <div class="slds-var-m-left_x-small slds-align_absolute-center">
+      <lightning-button
+        variant="brand"
+        label="Calculate"
+        title="Calculate"
+        onclick={handleCalculate}
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>

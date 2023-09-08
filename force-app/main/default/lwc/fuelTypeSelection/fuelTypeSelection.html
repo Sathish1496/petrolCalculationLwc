@@ -1,0 +1,24 @@
+<template>
+  <lightning-card>
+    <div class="slds-align_absolute-center">
+      <h1>Fuel Cost Calculator</h1>
+    </div>
+    <div class="slds-align_absolute-center" style="height: 5rem">
+      <lightning-button
+        variant="brand-outline"
+        label="PETROL"
+        title="PETROL"
+        onclick={petrolClick}
+        class="slds-var-m-left_x-small"
+      ></lightning-button>
+      <lightning-button
+        variant="brand-outline"
+        label="DIESEL"
+        title="DIESEL"
+        onclick={dieselClick}
+        disabled=""
+        class="slds-var-m-left_x-small"
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>
