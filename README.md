@@ -1,18 +1,30 @@
-# Salesforce DX Project: Next Steps
+**Steps for the Project Implementation:**
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+1. Enable Dev Hub in your Trailhead Playground
+2. Install Salesforce CLI
+3. Install Visual Studio Code
+4. Install the Visual Studio Code Salesforce extensions, including the Lightning Web Components extension
 
-## How Do You Plan to Deploy Your Changes?
+1. If you haven't already done so, authorize your hub org and provide it with an alias (myhuborg in the command below):
+sf org login web -d -a myhuborg 
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+2. Clone the projectPetrolCalculator repository:
+git clone https://github.com/Sathish1496/projectPetrolCalculator.git
 
-## Configure Your Salesforce DX Project
+3. Create a scratch org and provide it with an alias ( in the command below):
+sf org create scratch -d -f config/project-scratch-def.json -a petrolCalculator
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+4. Push the project to your scratch org:
+sf project deploy start
 
-## Read All About It
+5. Assign the object permission set to the default user:
+sf org assign permset -n Object_Access
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+6. Import sample data:
+sf data tree import -p ./data/data-plan.json
+
+7. Open the scratch org:
+sf org open
+
+8. In App Launcher, click View All then select the LWC apps.
+
