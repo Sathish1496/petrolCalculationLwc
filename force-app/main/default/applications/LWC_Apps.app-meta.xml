@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <brand>
         <headerColor>#0070D2</headerColor>
@@ -11,10 +11,6 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>LWC Apps</label>
     <navType>Standard</navType>
-    <tabs>Quiz_App</tabs>
-    <tabs>Third_Party_Js</tabs>
-    <tabs>Petrol_Calculation</tabs>
     <tabs>Car__c</tabs>
     <uiType>Lightning</uiType>
-    <utilityBar>LWC_Apps_UtilityBar</utilityBar>
 </CustomApplication>

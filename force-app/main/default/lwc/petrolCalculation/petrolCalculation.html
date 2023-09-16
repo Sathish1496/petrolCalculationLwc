@@ -6,6 +6,7 @@
         name="Total Distance"
         label="Total Distance (KM)"
         value={distance}
+        onchange={distanceHandler}
         required="true"
       ></lightning-input>
       <lightning-input
@@ -13,6 +14,7 @@
         name="Mileage"
         label="Mileage (KM/L)"
         value={mileage}
+        onchange={mileageHandler}
         required="true"
       ></lightning-input>
     </div>
@@ -23,7 +25,11 @@
           value={selectLocation}
         >
         </lightning-input-field>
-        <lightning-input-field field-name="Fuel_Cost__c" value={fuelCost}>
+        <lightning-input-field
+          field-name="Fuel_Cost__c"
+          value={fuelCost}
+          onchange={costHandler}
+        >
         </lightning-input-field>
       </lightning-record-edit-form>
     </div>

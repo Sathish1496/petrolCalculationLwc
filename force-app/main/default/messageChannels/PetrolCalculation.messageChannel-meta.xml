@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningMessageChannel xmlns="https://soap.sforce.com/2006/04/metadata">
+    <masterLabel>PetrolCalculation</masterLabel>
+    <isExposed>true</isExposed>
+    <description
+  >Message Channel to pass the data to calculate Fuel Calculation</description>
+    <lightningMessageFields>
+        <fieldName>distance</fieldName>
+        <description>This is the distance value</description>   
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>mileage</fieldName>
+        <description>This is the mileage value</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>fuelCost</fieldName>
+        <description>This is the Fuel Cost</description>
+    </lightningMessageFields>
+    
+        
+</LightningMessageChannel>
