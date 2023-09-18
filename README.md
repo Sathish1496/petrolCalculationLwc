@@ -23,32 +23,32 @@ Used to Calculate Fuel Price (only for selected cars) based on the selection.
 sf org login web -d -a myhuborg
 ```
 
-3. Clone the projectPetrolCalculator repository:
+2. Clone the projectPetrolCalculator repository:
 ```bash
 git clone https://github.com/Sathish1496/projectPetrolCalculator.git
 ```
 
-5. Create a scratch org and provide it with an alias ( in the command below):
+3. Create a scratch org and provide it with an alias ( in the command below):
 ```bash
 sf org create scratch -d -f config/project-scratch-def.json -a petrolCalculator
 ```
 
-7. Push the project to your scratch org:
+4. Push the project to your scratch org:
 ```bash
 sf project deploy start
 ```
 
-8. Assign the object permission set to the default user:
+5. Assign the object permission set to the default user:
 ```bash
 sf org assign permset -n Object_Access
 ```
 
-9. Open the scratch org:
+6. Open the scratch org:
 ```bash
 sf org open
 ```
 
-10. In App Launcher, click View All then select the LWC apps.
+7. In App Launcher, click View All then select the LWC apps.
 
 
 
