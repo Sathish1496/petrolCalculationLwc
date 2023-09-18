@@ -17,6 +17,7 @@ Used to Calculate Fuel Price (only for selected cars) based on the selection.
 2. Install Salesforce CLI
 3. Install Visual Studio Code
 4. Install the Visual Studio Code Salesforce extensions, including the Lightning Web Components extension
+  ----
 
 1. If you haven't already done so, authorize your hub org and provide it with an alias (myhuborg in the command below):
 ```bash
